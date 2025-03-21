@@ -1,0 +1,53 @@
+html, body {  
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: rgb(143, 129, 218);
+}
+
+input{
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.container{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-color: rgb(185, 175, 241);
+    padding: 20px;
+    border-radius: 13px;
+    flex-direction: column;
+}
+
+.churrasqueira{
+    display: flex;
+}
+
+#img-churrasqueira{
+    width: 100px;
+    height: 100px;
+}
+
+.middle{
+    display: flex;
+    gap: 15px;
+}
