@@ -4,9 +4,11 @@ let inputDuracao = document.getElementById("duracao");
 
 let resultado = document.getElementById("resultado");
 
-document.querySelector('.calc-button').addEventListener('click', calcular)
+document.querySelector('.form').addEventListener('submit', calcular)
 
-function calcular(){
+function calcular(e){
+    e.preventDefault()
+
     let adultos = inputAdultos.value;
     let criancas = inputCriancas.value;
     let duracao = inputDuracao.value;
@@ -17,7 +19,7 @@ function calcular(){
 
     resultado.innerHTML = `<p>${qdtTotalCarne/1000} Kg de carne</p>`
     resultado.innerHTML += `<p>${Math.ceil(qdtTotalCerveja/355)} latas de cerveja</p>`
-    resultado.innerHTML += `<p>${qdtTotalBebidas/1000}ml de bebidas</p>`
+    resultado.innerHTML += `<p>${Math.ceil(qdtTotalBebidas/2000)} garrafas de 2L de bebidas</p>`
 }
 
 function carnePorPessoa(duracao){
